@@ -5,9 +5,15 @@
   --background-color: #fff;
 }
 
+
+
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: var(--main-font);
+  scroll-behavior: smooth;
 }
 
 body,
@@ -100,6 +106,7 @@ html {
 }
 
 .gallery {
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
 }
@@ -221,3 +228,31 @@ footer {
 }
 
 
+.header-logo,
+.header-nav,
+.search-container,
+.header-notifications {
+  display: none;
+}
+
+
+.menu-icon {
+  display: block; 
+}
+
+
+.menu-icon {
+  display: block;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+.menu-icon:hover {
+  color: var(--primary-color);
+  
+}
